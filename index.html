@@ -2,7 +2,7 @@
     <body>
       <p>Click the button to get your coordinates.</p>
       <button onclick="getLocation()">Try it</button>
-      <p id="test"></p> 
+      <center><p id="test"></p></center>
       <script>
         var x = document.getElementById("test");
         function getLocation() {
@@ -13,8 +13,8 @@
             }
         }
         function showPosition(position){
-            x.innerHTML = "Latitude:" + position.coords.latitude +
-            "<br>Longitude" + position.coords.longitude;
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
         }
       </script> 
     </body>
